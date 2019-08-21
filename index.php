@@ -3,22 +3,22 @@
 <head>
     <title>Peter's Place Hotel</title>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 
-    <link href="css/bootstrap.css" rel="stylesheet" media="all" />
-    <link href="css/style.css" rel="stylesheet" media="all" />
-    <link href="css/font-awesome.css" rel="stylesheet" />   
-    <link href="css/easy-responsive-tabs.css" rel="stylesheet" />
-    <link href="css/flexslider.css" rel="stylesheet" media="screen" property="" />
-    <link href="css/chocolat.css" rel="stylesheet" media="screen" />
-    <link href="css/jquery-ui.css" rel="stylesheet" />
-    <link href="css/swipebox.css" rel="stylesheet" />
+    <link href="css/bootstrap.css" rel="stylesheet" media="all"/>
+    <link href="css/style.css" rel="stylesheet" media="all"/>
+    <link href="css/font-awesome.css" rel="stylesheet"/>
+    <link href="css/easy-responsive-tabs.css" rel="stylesheet"/>
+    <link href="css/flexslider.css" rel="stylesheet" media="screen" property=""/>
+    <link href="css/chocolat.css" rel="stylesheet" media="screen"/>
+    <link href="css/jquery-ui.css" rel="stylesheet"/>
+    <link href="css/swipebox.css" rel="stylesheet"/>
 
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,700&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Federo&display=swap" rel="stylesheet" /> 
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Federo&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
 
     <script src="js/modernizr-2.6.2.min.js"></script>
@@ -34,17 +34,17 @@
     <script defer src="js/jquery.flexslider.js"></script>
 
     <script>
-        jQuery(function($) {
+        jQuery(function ($) {
             $(".swipebox").swipebox();
         });
     </script>
 
     <script>
-        jQuery(document).ready(function($) {
-            $(".scroll").click(function(event) {
+        jQuery(document).ready(function ($) {
+            $(".scroll").click(function (event) {
                 event.preventDefault();
 
-                $('html, body').animate( {
+                $('html, body').animate({
                     scrollTop: $(this.hash).offset().top
                 }, 1000);
             });
@@ -52,11 +52,11 @@
     </script>
 
     <script>
-        $(window).load(function() {
-            $('.flexslider').flexslider( {
+        $(window).load(function () {
+            $('.flexslider').flexslider({
                 animation: "slide",
 
-                start: function(slider) {
+                start: function (slider) {
                     $('body').removeClass('loading');
                 }
             });
@@ -64,19 +64,19 @@
     </script>
 
     <script>
-        $(function() {
-            $("#slider4").responsiveSlides( {
+        $(function () {
+            $("#slider4").responsiveSlides({
                 auto: true,
                 pager: true,
                 nav: false,
                 speed: 500,
                 namespace: "callbacks",
 
-                before: function() {
+                before: function () {
                     $('.events').append("<li>before event fired.</li>");
                 },
 
-                after: function() {
+                after: function () {
                     $('.events').append("<li>after event fired.</li>");
                 }
             });
@@ -84,14 +84,14 @@
     </script>
 
     <script>
-        $(document).ready(function() {
-            $('#horizontalTab').easyResponsiveTabs( {
+        $(document).ready(function () {
+            $('#horizontalTab').easyResponsiveTabs({
                 type: 'default',
                 width: 'auto',
                 fit: true,
                 closed: 'accordion',
 
-                activate: function(event) {
+                activate: function (event) {
                     var $tab = $(this);
                     var $info = $('#tabInfo');
                     var $name = $('span', $info);
@@ -100,7 +100,7 @@
                 }
             });
 
-            $('#verticalTab').easyResponsiveTabs( {
+            $('#verticalTab').easyResponsiveTabs({
                 type: 'vertical',
                 width: 'auto',
                 fit: true
@@ -109,15 +109,15 @@
     </script>
 
     <script>
-        $(document).ready(function() {
-            $().UItoTop( {
+        $(document).ready(function () {
+            $().UItoTop({
                 easingType: 'easeOutQuart'
             });
         });
     </script>
 
     <script>
-        $(function() {
+        $(function () {
             $("#datepicker, #datepicker1, #datepicker2, #datepicker3").datepicker();
         });
     </script>
@@ -139,7 +139,8 @@
         <div class="social-bnr-agileits">
             <ul class="social-icons3">
                 <li>
-                    <a href="https://www.facebook.com/petersplace.hiriketiya/" class="fa fa-facebook icon-border facebook" target=_blank></a>
+                    <a href="https://www.facebook.com/petersplace.hiriketiya/"
+                       class="fa fa-facebook icon-border facebook" target=_blank></a>
                 </li>
 
                 <div class="contact-bnr-w3-agile">
@@ -148,7 +149,7 @@
                         <li><i class="fa fa-phone" aria-hidden="true"></i>+94 (41)225-74-66</li>
                     </ul>
                 </div>
-            </ul>        
+            </ul>
         </div>
     </div>
 
@@ -189,7 +190,8 @@
                         <li class="menu__item"><a href="#about" class="menu__link scroll">About Us</a></li>
                         <li class="menu__item"><a href="#gallery" class="menu__link scroll">Gallery</a></li>
                         <li class="menu__item"><a href="#rooms" class="menu__link scroll">Accomodation</a></li>
-                        <li class="menu__item"><a href="#reservation" class="menu__link scroll">Room Reservation</a></li>
+                        <li class="menu__item"><a href="#reservation" class="menu__link scroll">Room Reservation</a>
+                        </li>
                         <li class="menu__item"><a href="#contact" class="menu__link scroll">Contact Us</a></li>
                     </ul>
                 </nav>
@@ -340,10 +342,12 @@
             <h3 class="title-w3-agileits title-black-wthree">About Peter's Place Hotel</h3>
 
             <p class="about-para-w3ls">
-                Providing guests unique and enchanting views from their rooms with its exceptional amenities, makes Peter's Place 
-                Hotel one of the best in its kind in Sri Lanka. It is situated beside the beautiful south coast of Hiriketiya in 
+                Providing guests unique and enchanting views from their rooms with its exceptional amenities, makes
+                Peter's Place
+                Hotel one of the best in its kind in Sri Lanka. It is situated beside the beautiful south coast of
+                Hiriketiya in
                 Dikwella, Matara.
-                <br /><br />
+                <br/><br/>
                 Hiriketiya bay beach is a hidden gem in south coast of Sri Lanka. Also known as Hiri Beach, it is one of
                 those sleepy Southern beaches, beautifully clear water, lots of greeny small beach with great surfing,
                 located in the Hiriketiya Bay, which is a 500m beautiful horseshoe shaped cove. It is unique in shape
@@ -355,7 +359,8 @@
                 enthusiasts with a passion for surfing. Our intention is to create a fun, loving, and safe surfing
                 experience.
                 <br/><br/>
-                Peter's place provides you a delicious Sri Lankan and Italian foods and beverages. Try our food menu, awesome 
+                Peter's place provides you a delicious Sri Lankan and Italian foods and beverages. Try our food menu,
+                awesome
                 services and friendly staff while you are here.
             </p>
         </div>
@@ -374,7 +379,8 @@
 
                         <h4>Stay First, Pay After!</h4>
 
-                        <p>You can complete your payment only on check out. No need to pay an advance when reserving rooms.</p>
+                        <p>You can complete your payment only on check out. No need to pay an advance when reserving
+                            rooms.</p>
 
                         <p><i class="fa fa-check" aria-hidden="true"></i>Decorated rooms, proper air conditioned</p>
                         <p><i class="fa fa-check" aria-hidden="true"></i>Private balcony</p>
@@ -387,7 +393,8 @@
 
                         <h4>Friendly Staff, 24 Hour Service</h4>
 
-                        <p>Our friendly staff are commited to provide all the services required to our guests at any time of the day.</p>
+                        <p>Our friendly staff are commited to provide all the services required to our guests at any
+                            time of the day.</p>
 
                         <p><i class="fa fa-check" aria-hidden="true"></i>24 hours room service</p>
                         <p><i class="fa fa-check" aria-hidden="true"></i>24-hour concierge service</p>
@@ -571,7 +578,7 @@
     <div class="col-md-3 gallery-grid gallery1">
         <a href="images/g16.jpg" class="swipebox">
             <img src="images/g16.jpg" class="img-responsive" alt="g16">
-            
+
             <div class="textbox">
                 <h4>Peter's Place</h4>
                 <p><i class="fa fa-picture-o" aria-hidden="true"></i></p>
@@ -659,7 +666,7 @@
     <div class="col-md-3 gallery-grid gallery1">
         <a href="images/g24.jpg" class="swipebox">
             <img src="images/g24.jpg" class="img-responsive" alt="g24">
-            
+
             <div class="textbox">
                 <h4>Peter's Place</h4>
                 <p><i class="fa fa-picture-o" aria-hidden="true"></i></p>
@@ -761,7 +768,7 @@
 <div class="reservation-section" id="reservation">
     <div class="container">
         <h3 class="title-w3-agileits title-black-wthree">Room Reservation</h3>
-        
+
         <form name="form" method="post" action="includes/room_reservation.php">
             <div class="form-border">
                 <div class="row">
@@ -774,19 +781,19 @@
                             <div class="panel-body">
                                 <div class="form-group">
                                     <label>First Name</label>
-                                    <input name="fname" class="form-control" required />
-                                    <br />           
+                                    <input name="fname" class="form-control" required/>
+                                    <br/>
                                 </div>
-                                                       
+
                                 <div class="form-group">
                                     <label>Last Name</label>
-                                    <input name="lname" class="form-control" required />
-                                    <br />
+                                    <input name="lname" class="form-control" required/>
+                                    <br/>
                                 </div>
 
                                 <div class="form-group">
                                     <label>Phone Number</label>
-                                    <input name="phone" type ="text" class="form-control" required />
+                                    <input name="phone" type="text" class="form-control" required/>
                                 </div>
                             </div>
                         </div>
@@ -810,29 +817,29 @@
                                 </div>
 
                                 <div class="form-group">
-                                    <br />
+                                    <br/>
                                     <label>Check In</label>
-                                    <input name="cin" type="date" class="form-control" required />             
+                                    <input name="cin" type="date" class="form-control" required/>
                                 </div>
 
                                 <div class="form-group">
-                                    <br />
+                                    <br/>
                                     <label>Check Out</label>
-                                    <input name="cout" type="date" class="form-control" required />
+                                    <input name="cout" type="date" class="form-control" required/>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>            
-                
+                </div>
+
                 <div class="buttonHolder">
                     <input type="submit" name="submit" class="btn btn-primary" value="Submit" style="font-size:20px"/>
-                </div> 
-            </div>          
+                </div>
+            </div>
         </form>
 
         <div class="clearfix"></div>
-    </div>    
+    </div>
 </div>
 
 <footer>
@@ -854,27 +861,28 @@
 
                 <div class="col-sm-6" id="about_footer">
                     <h2>Peter's Place</h2>
-                    <br />
+                    <br/>
 
                     <p>
-                        Providing guests unique and enchanting views from their rooms with its exceptional amenities, makes Peter's 
-                        Place Hotel one of the best in its kind in Sri Lanka. 
-                        <br />
-                        Peter's place provides you a delicious Sri Lankan and Italian foods and beverages. 
+                        Providing guests unique and enchanting views from their rooms with its exceptional amenities,
+                        makes Peter's
+                        Place Hotel one of the best in its kind in Sri Lanka.
+                        <br/>
+                        Peter's place provides you a delicious Sri Lankan and Italian foods and beverages.
                         Try our food menu, awesome services and friendly staff while you are here.
                     </p>
                 </div>
 
                 <div class="col-sm-4" id="contact_us">
                     <h2>Contact Us</h2>
-                    <br />
+                    <br/>
 
                     <div>
                         <h3>
                             <i class="fa fa-map"></i>
                             <p>Peter's Place Hotel, Hiriketiya, Dickwella, Matara</p>
                         </h3>
-                        <br />
+                        <br/>
                     </div>
 
                     <div>
@@ -882,7 +890,7 @@
                             <i class="fa fa-phone"></i>
                             <p>+94 (41)225-74-66</p>
                         </h3>
-                        <br />
+                        <br/>
                     </div>
 
                     <div>
@@ -904,7 +912,7 @@
 </footer>
 
 <div class="arr-w3ls">
-    <a href="#home" id="toTop"> 
+    <a href="#home" id="toTop">
         <span id="toTopHover"></span>
     </a>
 </div>

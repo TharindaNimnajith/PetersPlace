@@ -27,10 +27,7 @@
 }
 
 .row {
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-top: 5%;
-    margin-bottom: 2%;
+    margin: 5% 5% 2%;
 }
 
 .form-border {
@@ -47,7 +44,7 @@
 }
 
 .panel-back {
-    background-color:#fff;
+    background-color: #fff;
 }
 
 .panel-default > .panel-heading {
@@ -59,22 +56,6 @@
 
 #bs-example-navbar-collapse-1 {
     margin-right: -60px;
-}
-
-#signin_btn {
-    padding: 1;
-    font-weight: bold;
-    font-size: 20px;
-    margin-left: 10px;
-    margin-bottom: 5px;
-    background-color: #192A56;
-    color: white;
-    opacity: 0.75;
-}
-
-#signin_btn:hover {
-    opacity: 1.5;
-    transition: 1s;
 }
 
 #about {
@@ -210,10 +191,6 @@ ul.social-icons3 {
     -webkit-transition: .5s all;
     transition: .5s all;
     -moz-transition: .5s all;
-    margin-right: 1em;
-    -webkit-transition: .5s all;
-    transition: .5s all;
-    -moz-transition: .5s all;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.16);
     -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.16);
     -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.16);
@@ -245,7 +222,7 @@ ul.social-icons3 {
     list-style: none;
     display: inline-block;
     padding-bottom: 15px;
-    padding-left: 25px; 
+    padding-left: 25px;
     color: #101010;
     font-size: 14px;
     transition: 0.5s all;
@@ -368,10 +345,10 @@ nav.navbar.navbar-default {
 
 p.logo_w3l_agile_caption {
     text-transform: uppercase;
-    letter-spacing: 5.7px;
+    letter-spacing: 6px;
     font-size: 11px;
     color: #c79f07;
-    text-shadow: 0px 1px 3px #454a47;
+    text-shadow: 0 1px 3px #454a47;
     font-family: 'Lato', sans-serif;
     font-weight: 600;
 }
@@ -436,7 +413,7 @@ li.menu__item:nth-child(6) {
     text-align: center;
     -webkit-transition: color 0.3s;
     transition: color 0.3s;
-    text-shadow: 0px 1px 3px #033815;
+    text-shadow: 0 1px 3px #033815;
 }
 
 .menu--iris .menu__link:hover,
@@ -562,30 +539,29 @@ li.menu__item:nth-child(6) {
 }
 
 .w3layouts-banner-top {
-    background: url(../images/1.jpg) no-repeat 0px 0px;
+    background: url(../images/1.jpg) no-repeat 0 0;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    -moz-background-size: cover;
 }
 
 .w3layouts-banner-top1 {
-    background: url(../images/2.jpg) no-repeat 0px 0px;
+    background: url(../images/2.jpg) no-repeat 0 0;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    -moz-background-size: cover;
 }
 
 .w3layouts-banner-top2 {
-    background: url(../images/3.jpg) no-repeat 0px 0px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-image: url(../images/3.jpg);
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    -moz-background-size: cover;
 }
 
 .w3layouts-banner-top, .w3layouts-banner-top1, .w3layouts-banner-top2 {
@@ -672,18 +648,20 @@ li.menu__item:nth-child(6) {
     text-decoration: none;
     height: 34px;
     width: 34px;
-    background: url(../images/left.png) no-repeat 0px 0px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
 }
 
 .callbacks_nav.next {
     left: auto;
-    background: url(../images/right.png) no-repeat 0px 0px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
     right: -62px;
 }
 
 .callbacks_nav.prev {
-    left: auto;
-    background: url(../images/left.png) no-repeat 0px 0px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
     left: -58px;
 }
 
@@ -763,7 +741,7 @@ li.menu__item:nth-child(6) {
 
 .callbacks_tabs li {
     display: inline-block;
-    margin: 0px 7px;
+    margin: 0 7px;
 }
 
 .callbacks_tabs a {
@@ -772,10 +750,9 @@ li.menu__item:nth-child(6) {
 
 .callbacks_tabs a:after {
     content: "\f111";
+    font-family: FontAwesome, sans-serif;
     font-size: 0;
-    font-family: FontAwesome;
     visibility: visible;
-    display: block;
     height: 10px;
     width: 10px;
     display: inline-block;
@@ -864,11 +841,11 @@ li.menu__item:nth-child(6) {
 
 .modal-content p {
     color: #636363;
-    font-size: 14.5px;
-    letter-spacing: .8px;
+    font-size: 15px;
+    letter-spacing: 1px;
     line-height: 32px;
     padding-top: 10px;
-    word-spacing: .5px;
+    word-spacing: 1px;
 }
 
 .modal-header {
@@ -907,10 +884,9 @@ li.menu__item:nth-child(6) {
 }
 
 .book-form form input[type="submit"] {
-    text-transform: capitalize;
     background: #0a1735;
     color: #FFFFFF;
-    padding: 0em 2em;
+    padding: 0 2em;
     height: 147px !important;
     border: none;
     font-size: 16px;
@@ -1060,7 +1036,7 @@ li.menu__item:nth-child(6) {
 }
 
 .cbp-ig-icon:before {
-    font-family: FontAwesome;
+    font-family: FontAwesome, sans-serif;
     font-size: 5em;
     speak: none;
     color: #0f2453;
@@ -1107,7 +1083,7 @@ li.menu__item:nth-child(6) {
     background: #ffce14;
     width: 160px;
     height: 6px;
-    top: 0px;
+    top: 0;
     left: 50%;
     margin: -10px 0 0 -80px;
     -webkit-transition: margin-top 0.2s;
@@ -1122,8 +1098,6 @@ li.menu__item:nth-child(6) {
     letter-spacing: 1px;
     color: #ffce14;
     -webkit-transform: translateY(10px);
-    -moz-transform: -moz-translateY(10px);
-    -ms-transform: -ms-translateY(10px);
     transform: translateY(10px);
     opacity: 0;
     -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
@@ -1183,7 +1157,7 @@ li.menu__item:nth-child(6) {
 }
 
 .contact-w3ls, .advantages, .banner-bottom, .plans-section {
-    padding: 100px 0px;
+    padding: 100px 0;
 }
 
 h3.title-w3-agileits {
@@ -1202,7 +1176,7 @@ h3.title-w3-agileits {
 }
 
 .about-wthree {
-    padding: 5em 0 22.6em 0px;
+    padding: 5em 0 22.6em 0;
     background: #eceef2;
 }
 
@@ -1215,7 +1189,7 @@ p.about-para-w3ls {
     color: #777;
     font-size: 18px;
     line-height: 33px;
-    letter-spacing: 0.5px;
+    letter-spacing: 1px;
     margin-bottom: 2em;
     text-align: justify;
 }
@@ -1244,7 +1218,7 @@ p.about-para-w3ls {
 .advantage-block h4 {
     font-size: 1.5em;
     color: #fff;
-    margin: 0.5em 0em 0.5em 0em;
+    margin: 0.5em 0 0.5em 0;
     text-transform: capitalize;
     letter-spacing: 1px;
 }
@@ -1255,7 +1229,7 @@ p.about-para-w3ls {
     text-align: left;
     padding-left: 3em;
     line-height: 35px;
-    letter-spacing: .8px;
+    letter-spacing: 1px;
 }
 
 .advantage-grid {
@@ -1279,7 +1253,7 @@ p.about-para-w3ls {
 }
 
 .price-list ul {
-    padding: 0px;
+    padding: 0;
     list-style: none;
 }
 
@@ -1296,11 +1270,11 @@ p.about-para-w3ls {
     font-weight: 300;
     position: absolute;
     top: 9.6em;
-    right: 0em;
+    right: 0;
 }
 
 .price-selet h3 {
-    padding: 0.2em 0em 0em 0em;
+    padding: 0.2em 0 0 0;
     font-size: 1.7em;
     float: left;
     margin-left: 20px;
@@ -1315,7 +1289,7 @@ p.about-para-w3ls {
 .price-gd-bottom {
     background: #fff;
     text-align: center;
-    padding: 1.8em 0em 1em;
+    padding: 1.8em 0 1em;
 }
 
 .price-gd-top img {
@@ -1323,14 +1297,14 @@ p.about-para-w3ls {
 }
 
 .price-list ul li {
-    padding: 0.5em 0em;
+    padding: 0.5em 0;
     font-size: 0.9em;
     color: #2b2b2b;
     display: inline-block;
 }
 
 .price-selet {
-    padding: 1em 0em;
+    padding: 1em 0;
     text-align: center;
     background: #fff;
 }
@@ -1352,7 +1326,7 @@ p.about-para-w3ls {
 }
 
 .price-block {
-    box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.15);
     transition: 0.5s all;
     -webkit-transition: 0.5s all;
     -moz-transition: 0.5s all;
@@ -1386,7 +1360,7 @@ p.about-para-w3ls {
     height: 1px;
     width: 23%;
     position: absolute;
-    bottom: 0%;
+    bottom: 0;
     left: 38%;
 }
 
@@ -1406,7 +1380,7 @@ h3.w3l-agile:before, h2.w3l-agile:before {
     height: 1px;
     width: 15%;
     position: absolute;
-    bottom: 0%;
+    bottom: 0;
     left: 43%;
 }
 
@@ -1426,7 +1400,7 @@ h3.w3l-agile:before, h2.w3l-agile:before {
 .w3layouts_work_grid_right {
     float: right;
     width: 50%;
-    padding: 5em 13em 0em 6em;
+    padding: 5em 13em 0 6em;
     margin-top: 5em;
 }
 
@@ -1545,7 +1519,7 @@ h3.w3l-agile:before, h2.w3l-agile:before {
 }
 
 section.contact-w3ls {
-    background: url(../images/contact.jpg) no-repeat;
+    background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
     background-size: 100% 100%;
@@ -1566,7 +1540,7 @@ section.contact-w3ls p.contact-agile1 {
 
 section.contact-w3ls p.contact-agile1 strong {
     font-family: 'Federo', sans-serif;
-    letter-spacing: 1.5px;
+    letter-spacing: 2px;
     color: #ffce14 !important;
     font-size: 16px;
 }
@@ -1582,7 +1556,7 @@ section.contact-w3ls .contact-agileits, .contact-w3-agile1 {
 
 section.contact-w3ls h4 {
     font-size: 35px;
-    letter-spacing: 1.5px;
+    letter-spacing: 2px;
     font-weight: normal;
     color: #fff;
     padding-bottom: 20px;
@@ -1718,7 +1692,7 @@ input:-ms-input-placeholder {
     height: 32px;
     border: none;
     text-indent: 100%;
-    background: url(../images/arr.png) no-repeat 0px 0px;
+    background: url(../images/arr.png) no-repeat 0 0;
 }
 
 #toTopHover {
@@ -1789,11 +1763,11 @@ input:-ms-input-placeholder {
     .book-form-left-w3layouts h2 {
         padding: 61px 0;
         font-size: 23px;
-        letter-spacing: 3.5px;
+        letter-spacing: 4px;
     }
 
     .w3layouts_work_grid_right {
-        padding: 5em 11em 0em 6em;
+        padding: 5em 11em 0 6em;
         margin-top: 4em;
     }
 
@@ -1807,7 +1781,7 @@ input:-ms-input-placeholder {
 }
 
 @media (max-width: 1280px) {
-    .col-sm-4 price-grid {
+    .col-sm-4 #price-grid {
         align-items: center;
         align-content: center;
         padding-left: 50px;
@@ -1826,7 +1800,7 @@ input:-ms-input-placeholder {
     }
 
     .w3layouts_work_grid_right {
-        padding: 5em 11em 0em 5em;
+        padding: 5em 11em 0 5em;
         margin-top: 2.5em;
     }
 
@@ -1836,7 +1810,7 @@ input:-ms-input-placeholder {
 }
 
 @media (max-width: 1080px) {
-    .col-sm-4 price-grid {
+    .col-sm-4 #price-grid {
         align-items: center;
         align-content: center;
         padding-left: 50px;
@@ -1847,11 +1821,11 @@ input:-ms-input-placeholder {
     }
 
     #bs-example-navbar-collapse-1 {
-        margin-right: 0px;
+        margin-right: 0;
     }
 
     .unordered_list {
-        margin-left: 0px;
+        margin-left: 0;
         text-align: center;
         margin-bottom: 50px;
     }
@@ -1866,11 +1840,11 @@ input:-ms-input-placeholder {
 
     .navbar-brand {
         font-size: 26px;
-        margin-left: 0px;
+        margin-left: 0;
     }
 
     p.logo_w3l_agile_caption {
-        letter-spacing: 4.7px;
+        letter-spacing: 5px;
         font-size: 10px;
     }
 
@@ -1906,7 +1880,7 @@ input:-ms-input-placeholder {
     }
 
     .agileits_w3layouts_more a {
-        font-size: 12.5px;
+        font-size: 13px;
         margin-top: 2.5em;
     }
 
@@ -1921,7 +1895,7 @@ input:-ms-input-placeholder {
     }
 
     .book-form form input[type="submit"] {
-        padding: 0em 1.6em;
+        padding: 0 1.6em;
         height: 125px !important;
         font-size: 14px;
     }
@@ -1940,11 +1914,11 @@ input:-ms-input-placeholder {
     }
 
     .contact-w3ls, .advantages, .banner-bottom, .plans-section {
-        padding: 70px 0px;
+        padding: 70px 0;
     }
 
     .about-wthree {
-        padding: 4em 0 21.2em 0px;
+        padding: 4em 0 21.2em 0;
     }
 
     .banner-bottom h3 span {
@@ -1965,7 +1939,7 @@ input:-ms-input-placeholder {
         text-transform: uppercase;
         display: inline-block;
         font-size: .8em;
-        letter-spacing: 1.5px;
+        letter-spacing: 2px;
     }
 
     h3.title-w3-agileits {
@@ -1988,7 +1962,7 @@ input:-ms-input-placeholder {
     }
 
     .w3ls-info-about p {
-        letter-spacing: 1.5px;
+        letter-spacing: 2px;
     }
 
     .advantage-block p {
@@ -2019,7 +1993,7 @@ input:-ms-input-placeholder {
     }
 
     .price-grid {
-        padding: 0px 10px;
+        padding: 0 10px;
     }
 
     .price-gd-top h4 {
@@ -2044,7 +2018,7 @@ input:-ms-input-placeholder {
     }
 
     .w3layouts_work_grid_right {
-        padding: 1em 9em 0em 1em;
+        padding: 1em 9em 0 1em;
         margin-top: 2.5em;
     }
 
@@ -2066,7 +2040,7 @@ input:-ms-input-placeholder {
     }
 
     section.contact-w3ls p.contact-agile1 {
-        line-height: 24.7px;
+        line-height: 25px;
     }
 
     section.contact-w3ls button.btn.btn-primary {
@@ -2097,7 +2071,7 @@ input:-ms-input-placeholder {
     }
 
     p.logo_w3l_agile_caption {
-        letter-spacing: 3.2px;
+        letter-spacing: 3px;
     }
 
     .search_form input[type='search'] {
@@ -2107,7 +2081,7 @@ input:-ms-input-placeholder {
     .search_form input[type='submit'] {
         font-size: 12px;
         letter-spacing: 1px;
-        padding: 6.5px 19px;
+        padding: 7px 19px;
     }
 
     .search_box:checked ~ .search_form {
@@ -2176,7 +2150,7 @@ input:-ms-input-placeholder {
     }
 
     .agileits-banner-info {
-        padding: 4em 0em;
+        padding: 4em 0;
     }
 
     .w3layouts-banner-top, .w3layouts-banner-top1, .w3layouts-banner-top2 {
@@ -2248,7 +2222,7 @@ input:-ms-input-placeholder {
     }
 
     .price-grid {
-        padding: 0px 10px;
+        padding: 0 10px;
         width: 41%;
         float: left;
         margin: 0 2.02em;
@@ -2268,7 +2242,7 @@ input:-ms-input-placeholder {
 
     .w3layouts_work_grid_right {
         margin-top: 1em;
-        padding: 1em 6em 0em 1em;
+        padding: 1em 6em 0 1em;
     }
 
     .contact-w3-agile2 {
@@ -2297,11 +2271,11 @@ input:-ms-input-placeholder {
     }
 
     section.contact-w3ls p.contact-agile1 {
-        padding-bottom: 4.5px;
+        padding-bottom: 5px;
     }
 
     .about-wthree {
-        padding: 4em 0 16.8em 0px;
+        padding: 4em 0 16.8em 0;
     }
 
     .w3ls_banner_bottom_grids {
@@ -2370,7 +2344,7 @@ input:-ms-input-placeholder {
     }
 
     .form-group {
-        margin-bottom: 0px;
+        margin-bottom: 0;
     }
 
     section.contact-w3ls button.btn.btn-primary {
@@ -2443,7 +2417,7 @@ input:-ms-input-placeholder {
     .w3layouts_work_grid_right p {
         font-size: 15px;
         line-height: 1.8em;
-        letter-spacing: 0.5px;
+        letter-spacing: 1px;
     }
 
     .w3layouts_work_grid_right h4 {
@@ -2499,7 +2473,7 @@ input:-ms-input-placeholder {
     }
 
     p.about-para-w3ls {
-        font-size: 14.5px;
+        font-size: 15px;
     }
 
     .w3l-slider-img {
@@ -2522,11 +2496,11 @@ input:-ms-input-placeholder {
 
     .advantage-block h4 {
         font-size: 19px;
-        margin: 0.8em 0em 0.2em 0em;
+        margin: 0.8em 0 0.2em 0;
     }
 
     .advantage-block p {
-        font-size: 14.5px;
+        font-size: 15px;
         line-height: 33px;
     }
 
@@ -2540,7 +2514,6 @@ input:-ms-input-placeholder {
     }
 
     h2.resp-accordion:first-child, h2.resp-accordion {
-        border-top: none !important;
         border: none !important;
     }
 
@@ -2549,7 +2522,7 @@ input:-ms-input-placeholder {
     }
 
     .w3layouts_work_grid_right p {
-        font-size: 14.5px;
+        font-size: 15px;
         line-height: 2em;
     }
 
@@ -2567,15 +2540,15 @@ input:-ms-input-placeholder {
     }
 
     .contact-w3ls, .advantages, .banner-bottom, .plans-section {
-        padding: 55px 0px;
+        padding: 55px 0;
     }
 
     .about-wthree {
-        padding: 4em 0 15.9em 0px;
+        padding: 4em 0 15.9em 0;
     }
 
     .about-wthree {
-        padding: 3em 0 13.9em 0px;
+        padding: 3em 0 13.9em 0;
     }
 }
 
@@ -2655,7 +2628,7 @@ input:-ms-input-placeholder {
     }
 
     .navbar-toggle {
-        margin: 0em 0 0;
+        margin: 0 0 0;
         border-radius: 0;
         padding: 10px 10px;
     }
@@ -2674,15 +2647,15 @@ input:-ms-input-placeholder {
     }
 
     .price-gd-bottom {
-        padding: 1.3em 0em 1em;
+        padding: 1.3em 0 1em;
     }
 
     .price-selet {
-        padding: .5em 0em;
+        padding: .5em 0;
     }
 
     .price-selet h3 {
-        padding: 0em 0em 0em 0em;
+        padding: 0 0 0 0;
     }
 
     .modal-dialog {
@@ -2722,7 +2695,7 @@ input:-ms-input-placeholder {
     }
 
     .agileits-banner-info {
-        padding: 2.5em 0em;
+        padding: 2.5em 0;
     }
 
     .w3layouts-banner-top, .w3layouts-banner-top1, .w3layouts-banner-top2 {
@@ -2764,7 +2737,7 @@ input:-ms-input-placeholder {
     }
 
     .about-wthree {
-        padding: 4em 0 14em 0px;
+        padding: 4em 0 14em 0;
     }
 
     .dmbutton {
@@ -2802,8 +2775,8 @@ input:-ms-input-placeholder {
     .w3layouts_work_grid_right {
         float: none;
         width: 100%;
-        margin-top: 0em;
-        padding: 2em 7em 0em;
+        margin-top: 0;
+        padding: 2em 7em 0;
     }
 
     .flex-control-nav {
@@ -2831,7 +2804,7 @@ input:-ms-input-placeholder {
     }
 
     .book-form select.form-control {
-        height: 34.8px;
+        height: 35px;
     }
 
     .book-form form input[type="submit"] {
@@ -2926,7 +2899,7 @@ input:-ms-input-placeholder {
     }
 
     .callbacks_tabs li {
-        margin: 0px 5px;
+        margin: 0 5px;
     }
 
     .callbacks_tabs {
@@ -2968,11 +2941,11 @@ input:-ms-input-placeholder {
     }
 
     .contact-w3ls, .advantages, .banner-bottom, .plans-section {
-        padding: 45px 0px;
+        padding: 45px 0;
     }
 
     .about-wthree {
-        padding: 3em 0 13.5em 0px;
+        padding: 3em 0 13.5em 0;
     }
 
     .w3ls-info-about h4 {
@@ -3016,7 +2989,7 @@ input:-ms-input-placeholder {
 
     .book-form p {
         font-size: 10px;
-        letter-spacing: 1.5px;
+        letter-spacing: 2px;
     }
 
     .book-form {
@@ -3043,7 +3016,7 @@ input:-ms-input-placeholder {
     }
 
     .about-wthree {
-        padding: 2.6em 0 11.4em 0px;
+        padding: 2.6em 0 11.4em 0;
     }
 
     .advantage-block {
@@ -3063,7 +3036,7 @@ input:-ms-input-placeholder {
     }
 
     .w3layouts_work_grid_right {
-        padding: 2em 4em 0em;
+        padding: 2em 4em 0;
     }
 
     section.contact-w3ls h4 {
@@ -3104,7 +3077,7 @@ input:-ms-input-placeholder {
 
     .fields-w3ls {
         width: 67%;
-        margin: 0em auto 0;
+        margin: 0 auto 0;
         float: none;
     }
 
@@ -3182,7 +3155,7 @@ input:-ms-input-placeholder {
     }
 
     p.logo_w3l_agile_caption {
-        letter-spacing: 2.2px;
+        letter-spacing: 2px;
         line-height: 17px;
     }
 
@@ -3196,7 +3169,7 @@ input:-ms-input-placeholder {
     }
 
     nav.navbar.navbar-default {
-        padding: .58em 0 0em 0;
+        padding: .58em 0 0 0;
     }
 
     .agileits-banner-info h4 {
@@ -3210,7 +3183,7 @@ input:-ms-input-placeholder {
     }
 
     .agileits-banner-info {
-        padding: 2em 0em;
+        padding: 2em 0;
     }
 
     .w3layouts-banner-top, .w3layouts-banner-top1, .w3layouts-banner-top2 {
@@ -3231,7 +3204,7 @@ input:-ms-input-placeholder {
     }
 
     .banner-bottom h3 {
-        letter-spacing: 1.5px;
+        letter-spacing: 2px;
     }
 
     .cbp-ig-grid .cbp-ig-title {
@@ -3247,13 +3220,13 @@ input:-ms-input-placeholder {
     }
 
     .w3ls-info-about {
-        left: 0%;
+        left: 0;
         width: 100%;
         top: 108.5%;
     }
 
     .about-wthree {
-        padding: 2.6em 0 12em 0px;
+        padding: 2.6em 0 12em 0;
     }
 
     .advantage-block p {
@@ -3304,7 +3277,7 @@ input:-ms-input-placeholder {
 
     .w3layouts_work_grid_right p {
         font-size: 14px;
-        letter-spacing: 0.5px;
+        letter-spacing: 1px;
         line-height: 30px;
     }
 
@@ -3354,7 +3327,7 @@ input:-ms-input-placeholder {
     }
 
     .agileits-banner-info {
-        padding: 1.8em 0em;
+        padding: 1.8em 0;
     }
 
     .book-form form input[type="submit"] {
@@ -3390,7 +3363,7 @@ input:-ms-input-placeholder {
     }
 
     .about-wthree {
-        padding: 2.6em 0 19em 0px;
+        padding: 2.6em 0 19em 0;
     }
 
     .advantage-block {
@@ -3419,12 +3392,12 @@ input:-ms-input-placeholder {
     }
 
     .w3layouts_work_grid_right {
-        padding: 2em 2.5em 0em;
+        padding: 2em 2.5em 0;
     }
 
     .w3layouts_work_grid_right h5 {
         font-size: 1em;
-        letter-spacing: 1.5px;
+        letter-spacing: 2px;
     }
 
     .w3layouts_work_grid_right p:nth-child(4) {
@@ -3452,7 +3425,7 @@ input:-ms-input-placeholder {
     }
 
     .contact-bnr-w3-agile ul li {
-        padding: 7px 0px;
+        padding: 7px 0;
     }
 
     .search_box:checked ~ .search_form {
@@ -3483,7 +3456,7 @@ input:-ms-input-placeholder {
     }
 
     .callbacks_tabs li {
-        margin: 0px 4px;
+        margin: 0 4px;
     }
 
     .search_box:checked ~ .search_form {
@@ -3495,7 +3468,7 @@ input:-ms-input-placeholder {
     }
 
     .search_form input[type='submit'] {
-        padding: 6.2px 12px;
+        padding: 6px 12px;
     }
 
     .book-form form input[type="submit"] {
@@ -3555,11 +3528,11 @@ input:-ms-input-placeholder {
 
 @media (max-width: 375px) {
     .contact-w3ls, .advantages, .banner-bottom, .plans-section {
-        padding: 40px 0px;
+        padding: 40px 0;
     }
 
     .about-wthree {
-        padding: 2.2em 0 18em 0px;
+        padding: 2.2em 0 18em 0;
     }
 
     .tpl6 .dmbutton {
@@ -3580,7 +3553,7 @@ input:-ms-input-placeholder {
     }
 
     p.logo_w3l_agile_caption {
-        letter-spacing: 1.5px;
+        letter-spacing: 2px;
         line-height: 14px;
     }
 
@@ -3627,7 +3600,7 @@ input:-ms-input-placeholder {
     }
 
     .agileits-banner-info p {
-        letter-spacing: 0.4px;
+        letter-spacing: 0;
     }
 
     .agileits_w3layouts_more a {
@@ -3691,7 +3664,7 @@ input:-ms-input-placeholder {
     }
 
     .w3layouts_work_grid_right {
-        padding: 2em 1.9em 0em;
+        padding: 2em 1.9em 0;
     }
 
     .w3layouts_work_grid_left {
@@ -3705,7 +3678,7 @@ input:-ms-input-placeholder {
 
     .flex-control-nav {
         top: 5%;
-        right: 0%;
+        right: 0;
     }
 
     section.contact-w3ls h4 {

@@ -8,15 +8,17 @@
                 width: 'auto',
                 fit: true,
                 closed: false,
-                activate: function(){}
+                activate: function () {
+                }
             }
             //Variables
-            var options = $.extend(defaults, options);            
-            var opt = options, jtype = opt.type, jfit = opt.fit, jwidth = opt.width, vtabs = 'vertical', accord = 'accordion';
+            var options = $.extend(defaults, options);
+            var opt = options, jtype = opt.type, jfit = opt.fit, jwidth = opt.width, vtabs = 'vertical',
+                accord = 'accordion';
 
             //Events
-            $(this).bind('tabactivate', function(e, currentTab) {
-                if(typeof options.activate === 'function') {
+            $(this).bind('tabactivate', function (e, currentTab) {
+                if (typeof options.activate === 'function') {
                     options.activate.call(currentTab, e)
                 }
             });
@@ -33,13 +35,14 @@
 
                 $respTabs.find('.resp-tabs-container > div').addClass('resp-tab-content');
                 jtab_options();
+
                 //Properties Function
                 function jtab_options() {
                     if (jtype == vtabs) {
                         $respTabs.addClass('resp-vtabs');
                     }
                     if (jfit == true) {
-                        $respTabs.css({ width: '100%', margin: '0px' });
+                        $respTabs.css({width: '100%', margin: '0px'});
                     }
                     if (jtype == accord) {
                         $respTabs.addClass('resp-easy-accordion');
@@ -68,8 +71,8 @@
                     $tabItem.attr('aria-controls', 'tab_item-' + (count));
                     $tabItem.attr('role', 'tab');
 
-                    //First active tab, keep closed if option = 'closed' or option is 'accordion' and the element is in accordion mode 
-                    if(options.closed !== true && !(options.closed === 'accordion' && !$respTabsList.is(':visible')) && !(options.closed === 'tabs' && $respTabsList.is(':visible'))) {                  
+                    //First active tab, keep closed if option = 'closed' or option is 'accordion' and the element is in accordion mode
+                    if (options.closed !== true && !(options.closed === 'accordion' && !$respTabsList.is(':visible')) && !(options.closed === 'tabs' && $respTabsList.is(':visible'))) {
                         $respTabs.find('.resp-tab-item').first().addClass('resp-tab-active');
                         $respTabs.find('.resp-accordion').first().addClass('resp-tab-active');
                         $respTabs.find('.resp-tab-content').first().addClass('resp-tab-content-active').attr('style', 'display:block');
@@ -93,7 +96,9 @@
                         var $tabAria = $currentTab.attr('aria-controls');
 
                         if ($currentTab.hasClass('resp-accordion') && $currentTab.hasClass('resp-tab-active')) {
-                            $respTabs.find('.resp-tab-content-active').slideUp('', function () { $(this).addClass('resp-accordion-closed'); });
+                            $respTabs.find('.resp-tab-content-active').slideUp('', function () {
+                                $(this).addClass('resp-accordion-closed');
+                            });
                             $currentTab.removeClass('resp-tab-active');
                             return false;
                         }
@@ -112,7 +117,7 @@
                         //Trigger tab activation event
                         $currentTab.trigger('tabactivate', $currentTab);
                     });
-                    //Window resize function                   
+                    //Window resize function
                     $(window).resize(function () {
                         $respTabs.find('.resp-accordion-closed').removeAttr('style');
                     });
