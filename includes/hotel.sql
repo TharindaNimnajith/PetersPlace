@@ -12,7 +12,7 @@ create table room (
     description varchar(100),
     availability boolean,
     status boolean,
-    type_id int, 
+    type_id int,
     constraint room_pk primary key(room_no),
     constraint room_fk foreign key(type_id) references room_type(t_id)
 );

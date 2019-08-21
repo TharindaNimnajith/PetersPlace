@@ -1,3 +1,10 @@
+.search-box img {
+    margin: -1px -10px 0 0;
+    height: 70%;
+    width: 70%;
+    float: right;
+}
+
 .room_mngmnt a {
     text-decoration: none;
     color: white;
@@ -233,4 +240,12 @@ table.table td i {
 
 #nav-topics li {
     padding-right: 40px;
+}
+
+.form-group label {
+    margin-top: 10px;
+}
+
+.radio {
+    margin-top: -5px;
 }

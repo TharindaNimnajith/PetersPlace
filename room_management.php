@@ -56,20 +56,21 @@
     <div class="table-wrapper">
         <div class="table-title">
             <div class="row">
-                <div class="col-sm-4">
+                <div class="col-sm-6">
                     <h2 class="room_mngmnt">
                         <a href="room_management.php">Room <b>Management</b></a>
                     </h2>
                 </div>
 
-                <div class="col-sm-4">
+                <div class="col-sm-3">
                     <div class="search-box">
-                        <i class="material-icons">&#xE8B6;</i>
-                        <input type="text" class="form-control" placeholder="Enter Room Number here&hellip;">
+                        <a href="#searchRoomModal" class="search" data-toggle="modal">
+                            <img src="images/search_bar.png" alt="search_icon">
+                        </a>
                     </div>
                 </div>
 
-                <div class="col-sm-4">
+                <div class="col-sm-3">
                     <a href="#addRoomModal" class="btn btn-success" data-toggle="modal">
                         <i class="material-icons">&#xE147;</i>
                         <span>Add New Room</span>
@@ -148,7 +149,7 @@
                     <div class="form-group">
                         <label>Floor</label>
 
-                        <select name="floor" name="floor" class="form-control">
+                        <select name="floor" class="form-control">
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
@@ -174,7 +175,7 @@
 <div id="editRoomModal" class="modal fade">
     <div class="modal-dialog">
         <div class="modal-content">
-            <form>
+            <form method="post" action="">
                 <div class="modal-header">
                     <h4 class="modal-title">Edit Room</h4>
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
@@ -183,13 +184,13 @@
                 <div class="modal-body">
                     <div class="form-group">
                         <label>Room No</label>
-                        <input type="text" class="form-control" required>
+                        <input type="text" name="r_no" class="form-control" required>
                     </div>
 
                     <div class="form-group">
                         <label>Room Type</label>
 
-                        <select name="roomtype" class="form-control">
+                        <select name="roomtype" class="form-control" required>
                             <option value="1">Single Bedroom</option>
                             <option value="2">Double Bedroom</option>
                             <option value="3">Family Bedroom</option>
@@ -199,7 +200,7 @@
                     <div class="form-group">
                         <label>Floor</label>
 
-                        <select name="floor" class="form-control">
+                        <select name="floor" class="form-control" required>
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
@@ -208,7 +209,7 @@
 
                     <div class="form-group">
                         <label>Description</label>
-                        <textarea class="form-control"></textarea>
+                        <textarea class="form-control" name="desc"></textarea>
                     </div>
                 </div>
 
@@ -219,11 +220,11 @@
                                 <label>Availability</label>
 
                                 <div class="radio">
-                                    <label><input type="radio" name="available">Available</label>
+                                    <label><input type="radio" name="available" value="1">Available</label>
                                 </div>
 
                                 <div class="radio">
-                                    <label><input type="radio" name="available">Not Available</label>
+                                    <label><input type="radio" name="available" value="0">Not Available</label>
                                 </div>
                             </div>
                         </div>
@@ -233,11 +234,11 @@
                                 <label>Status</label>
 
                                 <div class="radio">
-                                    <label><input type="radio" name="status_btn">Clean</label>
+                                    <label><input type="radio" name="status_btn" value="1">Clean</label>
                                 </div>
 
                                 <div class="radio">
-                                    <label><input type="radio" name="status_btn">Not Clean</label>
+                                    <label><input type="radio" name="status_btn" value="0">Not Clean</label>
                                 </div>
                             </div>
                         </div>
@@ -257,7 +258,7 @@
 <div id="viewRoomModal" class="modal fade">
     <div class="modal-dialog">
         <div class="modal-content">
-            <form>
+            <form method="post" action="">
                 <div class="modal-header">
                     <h4 class="modal-title">View Room</h4>
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
@@ -266,7 +267,89 @@
                 <div class="modal-body">
                     <div class="form-group">
                         <label>Room No</label>
-                        <input type="text" class="form-control" required>
+                        <input type="text" name="r_no" class="form-control" disabled>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Room Type</label>
+
+                        <select name="roomtype" class="form-control" disabled>
+                            <option value="1">Single Bedroom</option>
+                            <option value="2">Double Bedroom</option>
+                            <option value="3">Family Bedroom</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Floor</label>
+
+                        <select name="floor" class="form-control" disabled>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Description</label>
+                        <textarea class="form-control" name="desc" disabled></textarea>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="row2">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label>Availability</label>
+
+                                <div class="radio">
+                                    <label><input type="radio" name="available" value="1" disabled>Available</label>
+                                </div>
+
+                                <div class="radio">
+                                    <label><input type="radio" name="available" value="0" disabled>Not Available</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label>Status</label>
+
+                                <div class="radio">
+                                    <label><input type="radio" name="status_btn" value="1" disabled>Clean</label>
+                                </div>
+
+                                <div class="radio">
+                                    <label><input type="radio" name="status_btn" value="0" disabled>Not Clean</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Search Modal HTML -->
+<div id="searchRoomModal" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <form method="post" action="">
+                <div class="modal-header">
+                    <h4 class="modal-title">Search Room</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label>Room No</label>
+                        <input type="text" name="r_no" class="form-control">
                     </div>
 
                     <div class="form-group">
@@ -288,11 +371,6 @@
                             <option value="3">3</option>
                         </select>
                     </div>
-
-                    <div class="form-group">
-                        <label>Description</label>
-                        <textarea class="form-control"></textarea>
-                    </div>
                 </div>
 
                 <div class="row">
@@ -302,11 +380,11 @@
                                 <label>Availability</label>
 
                                 <div class="radio">
-                                    <label><input type="radio" name="available">Available</label>
+                                    <label><input type="radio" name="available" value="1">Available</label>
                                 </div>
 
                                 <div class="radio">
-                                    <label><input type="radio" name="available">Not Available</label>
+                                    <label><input type="radio" name="available" value="0">Not Available</label>
                                 </div>
                             </div>
                         </div>
@@ -316,11 +394,11 @@
                                 <label>Status</label>
 
                                 <div class="radio">
-                                    <label><input type="radio" name="status_btn">Clean</label>
+                                    <label><input type="radio" name="status_btn" value="1">Clean</label>
                                 </div>
 
                                 <div class="radio">
-                                    <label><input type="radio" name="status_btn">Not Clean</label>
+                                    <label><input type="radio" name="status_btn" value="0">Not Clean</label>
                                 </div>
                             </div>
                         </div>
@@ -329,6 +407,7 @@
 
                 <div class="modal-footer">
                     <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
+                    <input type="submit" class="btn btn-info" value="Search">
                 </div>
             </form>
         </div>
@@ -339,7 +418,7 @@
 <div id="deleteRoomModal" class="modal fade">
     <div class="modal-dialog">
         <div class="modal-content">
-            <form>
+            <form method="post" action="">
                 <div class="modal-header">
                     <h4 class="modal-title">Delete Room</h4>
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
