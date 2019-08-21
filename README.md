@@ -1,3 +1,2 @@
 # PetersPlace
-ITP Project
-Hotel Management System with PHP
+ITP Project - Hotel Management System with PHP
