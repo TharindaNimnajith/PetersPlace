@@ -2060,10 +2060,6 @@ input:-ms-input-placeholder {
     }
 }
 
-@media (max-width: 1050px) {
-
-}
-
 @media (max-width: 1024px) {
     .navbar-brand {
         font-size: 23px;

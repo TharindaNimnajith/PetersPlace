@@ -21,6 +21,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
 
+
     <script src="js/modernizr-2.6.2.min.js"></script>
     <script src="js/jquery-2.1.4.min.js"></script>
     <script src="js/jqBootstrapValidation.js"></script>

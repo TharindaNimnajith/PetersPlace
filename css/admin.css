@@ -249,3 +249,15 @@ table.table td i {
 .radio {
     margin-top: -5px;
 }
+
+@media (max-width: 1080px) {
+    .search-box img {
+        height: 35px;
+        width: 175px;
+        margin: 10px 10px 10px 10px;
+    }
+
+    .table-title .btn {
+        margin: 10px 10px 10px 10px;
+    }
+}
