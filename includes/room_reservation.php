@@ -14,7 +14,7 @@ $checkOut = $_POST['cout'];
 //check room availability
 //assign room_no
 
-$uid = 1;
+$uid = 10;
 
 $query1 = "INSERT INTO user (uid, fname, lname) VALUES ('{$uid}', '{$firstName}', '{$lastName}')";
 $query2 = "INSERT INTO user_phone (uid, phone_number) VALUES ('{$uid}', '{$phone}')";

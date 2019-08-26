@@ -130,7 +130,7 @@
 <div id="addReservationModal" class="modal fade">
     <div class="modal-dialog">
         <div class="modal-content">
-            <form method="post" action="">
+            <form method="post" action="includes/add_reservation.php">
                 <div class="modal-header">
                     <h4 class="modal-title">Add New Reservation</h4>
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
